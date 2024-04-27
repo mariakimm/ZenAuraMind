@@ -1,0 +1,307 @@
+/* Estilos generales */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 70px;
+    background-color: #d4ebf2a9;
+    font-family:'Italianno', cursive, 'Slabo 27px', serif;
+    color: #9Acd32;
+    text-align: center;
+    font-weight: bold;
+}
+/* Estilos Header */
+/* header{
+background-color: #add8e6a9;
+height: 100%;
+width: auto;
+padding: 10px;
+} */
+.menu-nav{
+    background-color: #add8e6a9; 
+}
+
+.a-logo img{
+    height: 250px; 
+    width: 250px;
+}
+
+.menu{
+    flex-grow: 0;
+}
+
+.menu-boton{
+    border: none;
+}
+
+.menu-ul{
+    text-align: center;
+}
+
+.menu-ul li a{
+    color: black;
+    font-size: 30px;
+}
+
+.menu-icon{
+    background-image: url(./../img/menu.svg);
+    width: 4em;
+    height: 3em;
+}
+
+/* .menu{
+    position: absolute;
+    right: 0px;
+    top: 130px;
+} */
+/* .menu nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    font-weight: bold;
+} */
+
+/* .menu nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+} */
+
+/* Estilos Main */
+#banner{
+    height: 60%;
+    width: auto;
+}
+/* .anuncio{
+    height: 600px;
+    position: relative;
+}
+
+.foto-tranquilidad{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.boton-anuncio{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    font-size: 35px;
+    text-align: center;
+    padding:30px;
+}
+.boton-anuncio a{
+    text-decoration: none;
+    color: black;
+    background-color: #add8e6a9;
+    font-weight: bold;
+    border-radius: 45px;
+    padding: 15px;
+    border: 3px solid; 
+}
+
+.introduccion-main{
+    
+    background-color: #bac8cca9 ;
+    padding: 20px;
+}
+
+.texto1, .texto2, .texto3{
+    
+    font-size: 30px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    width:80%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/* Estilos Footer */
+.pie-pagina{
+    text-align: center;
+    background-color: #a0f4a0;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.derechos-reservados, .direccion{
+    margin-bottom: 10px;
+}
+
+/* Estilos Practicas */
+.practicas-programa{
+    height: 550px;
+    background-color: #bac8cca9;
+    position: relative;
+    font-size: 50px;
+    color: black;
+    padding: 20px;
+    
+}
+
+.card-boton{
+    display: inline-block;
+    width: 400px;
+    height: 250px;
+    padding: 35px 30px;
+    
+}
+
+.card-boton a{
+    position:absolute;
+    text-decoration: none;
+    color: black;
+    background-color: #add8e6a9;
+    font-weight: bold;
+    padding: 30px;
+    border: 3px solid; 
+    height: 200px;  
+    width: 400px;
+    text-align: center; 
+    border-radius: 30px 20px 30px 10px; 
+    margin: auto;
+}
+
+.destacado-uno{
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(204, 240, 133);
+    font-size: 30px;
+    height: 70px;
+    width: 250px;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 15px;
+    top: 15px;
+    left: 120px;
+    
+}
+
+.destacado-dos{
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(204, 240, 133);
+    font-size: 30px;
+    height: 70px;
+    width: 250px;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 15px;
+    right: 140px;
+    bottom: 200px;
+}
+
+/* Estilos Beneficios */
+.beneficios-programa{
+    background-color: #bac8cca9;
+    text-align: justify;
+    padding: 35px;
+}
+
+.beneficios-programa h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    color: #9Acd32;
+    font-size: 30px;
+}
+
+.card-beneficios{
+    width: 400px;
+    height: 500px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+}
+.card-beneficios img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card div{
+    width: 100%;
+    height: 500px;
+}
+/* Estilos Recursos */
+.practicas{
+    height: auto;
+    background-color: #bac8cca9;
+}
+.card-praticas{
+    display: inline-block;
+    padding: 30px 20px;
+}
+
+.card-praticas h4{
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.videos-praticas{
+    display: inline-block;
+}
+
+/* Estilos Contacto */
+.formulario{
+    background-color: #bac8cca9;
+    position: relative;  
+    height: auto;
+}
+.formulario form{
+    /* background-color: #bac8cca9; */
+    width: 50%;
+    height: auto;
+    font-size: 20px;
+    padding: 20px;
+    display: inline-block;   
+}
+
+.formulario form label,.formulario form input, .formulario form select{
+    width: 95%;
+    height: 50px;
+    font-size: 20px;   
+}
+.formulario textarea{
+    width: 95%;
+    height: 400px;
+    font-size: 20px;
+}
+
+.boton-enviar{
+    text-align: center; 
+}
+
+.boton-enviar button{
+    font-size: 20px;
+    color: black;
+    background-color: #add8e6a9;
+    width: 100px;
+    height: 40px;
+}
+.mapa{
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.info-direccion{
+    position: absolute;
+    width: 50%;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+}
+.info-direccion p {
+    font-size: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
