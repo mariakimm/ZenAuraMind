@@ -12,6 +12,7 @@ h1{
     color: #9Acd32;
     text-align: center;
     font-weight: bold;
+    margin-bottom: 0;
 }
 /* Estilos Header */
 /* header{
@@ -44,6 +45,7 @@ padding: 10px;
 .menu-ul li a{
     color: black;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .menu-icon{
@@ -52,29 +54,49 @@ padding: 10px;
     height: 3em;
 }
 
-/* .menu{
-    position: absolute;
-    right: 0px;
-    top: 130px;
-} */
-/* .menu nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 20px;
-    font-weight: bold;
-} */
-
-/* .menu nav ul li a{
-    color: black;
-    text-decoration: none;
-    font-size: 40px;
-} */
-
-/* Estilos Main */
-#banner{
-    height: 60%;
-    width: auto;
+#anuncio.carousel {
+    max-width: 100%;
+    height: 35em;
+    overflow: hidden;
 }
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.boton-anuncio{
+    position:absolute;
+    bottom: 0;
+    width: 11em;
+    font-size: 35px;
+    text-align: center;
+    padding:30px;
+    display: flex;
+    justify-content: center;
+    transform: translateX(100%);
+}
+
+.boton-anuncio a{
+    text-decoration: none;
+    display: flex;
+    color: black;
+    background-color: #add8e6a9;
+    font-weight: bold;
+    border-radius: 45px;
+    padding: 15px;
+    border: 3px solid; 
+    align-items: center;
+}
+
 /* .anuncio{
     height: 600px;
     position: relative;
@@ -109,8 +131,51 @@ padding: 10px;
     background-color: #bac8cca9 ;
     padding: 20px;
 }
+/* Main */
+.introduccion-main{
+    background-color: #bac8cca9;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+}
 
-.texto1, .texto2, .texto3{
+.contenedor-texto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: stretch;
+    
+    
+}
+
+.texto{
+    padding: 20px;
+    text-align: justify;
+    overflow: auto;
+    height: 100%;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.texto p .negrita{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.contact-fixed{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.contact-fixed img{
+    width: 60px;
+}
+
+
+
+/* .texto1, .texto2, .texto3{
     
     font-size: 30px;
     text-align: justify;
@@ -119,20 +184,25 @@ padding: 10px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-} */
+} */ 
 
 /* Estilos Footer */
 .pie-pagina{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #a0f4a0;
-    font-size: 20px;
-    padding: 20px 0;
 }
 
 .derechos-reservados, .direccion{
-    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
+.derechos-reservados p, .direccion p{
+    margin: 0;
+}
 /* Estilos Practicas */
 .practicas-programa{
     height: 550px;
@@ -304,4 +374,17 @@ padding: 10px;
     font-size: 20px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* media query de tablet */
+@media (max-width: 1014px){
+
+}
+
+/* media query de mobile */
+@media (max-width:768px){
+.boton-anuncio{
+    transform: translateX(50%);
+}
+
 }
