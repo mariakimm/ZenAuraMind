@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 70px;
+  background-color: rgba(212, 235, 242, 0.662745098);
+  font-family: "Italianno", cursive, "Slabo 27px", serif;
+  color: #9Acd32;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
