@@ -14,4 +14,257 @@ h1 {
   margin-bottom: 0;
 }
 
+.contact-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.contact-fixed img {
+  width: 60px;
+}
+
+header .menu-nav {
+  background-color: rgba(173, 216, 230, 0.662745098);
+}
+header .menu-div .logo img {
+  height: 150px;
+  width: 150px;
+}
+header .menu-div .logo .menu-boton {
+  border: none;
+}
+header .menu-div .logo .menu-icon {
+  background-image: url(./../img/menu.svg);
+  width: 4em;
+  height: 3em;
+}
+header .menu-div .logo .menu {
+  flex-grow: 0;
+}
+header .menu-div .logo .menu .menu-ul {
+  text-align: center;
+}
+header .menu-div .logo .menu .menu-ul .menu-li a-li {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main .main-index #anuncio {
+  max-width: 100%;
+  height: 35em;
+  overflow: hidden;
+}
+main .main-index #anuncio .carrousel-inner {
+  height: 100%;
+}
+main .main-index #anuncio .carrousel-inner .carousel-fotos img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+main .main-index .contenedor-centrado {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+main .main-index .contenedor-centrado .boton-anuncio {
+  display: inline-block;
+  width: 11em;
+  font-size: 35px;
+  text-align: center;
+  padding: 30px;
+}
+main .main-index .contenedor-centrado .boton-anuncio a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  background-color: rgba(173, 216, 230, 0.662745098);
+  font-weight: bold;
+  border-radius: 45px;
+  padding: 15px;
+  border: 3px solid;
+  align-items: center;
+}
+main .main-index .introduccion-main {
+  background-color: rgba(186, 200, 204, 0.662745098);
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+main .main-index .introduccion-main .contenedor-texto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+main .main-index .introduccion-main .contenedor-texto .texto {
+  padding: 20px;
+  text-align: justify;
+  overflow: auto;
+  height: 100%;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+main .main-index .introduccion-main .contenedor-texto .texto p {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+main .beneficios-programa {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: rgba(186, 200, 204, 0.662745098);
+}
+main .beneficios-programa .card-beneficios {
+  display: grid;
+  margin: 10px;
+  font-size: 20px;
+}
+main .beneficios-programa .card-beneficios img {
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+main .beneficios-programa .card-beneficios div h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: #9Acd32;
+  font-size: 30px;
+}
+main .beneficios-programa .card-beneficios div p {
+  text-align: justify;
+}
+
+main .beneficios-programa {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: rgba(186, 200, 204, 0.662745098);
+}
+main .beneficios-programa .card-beneficios {
+  display: grid;
+  margin: 10px;
+  font-size: 20px;
+}
+main .beneficios-programa .card-beneficios img {
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+main .beneficios-programa .card-beneficios div h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: #9Acd32;
+  font-size: 30px;
+}
+main .beneficios-programa .card-beneficios div p {
+  text-align: justify;
+}
+
+main .practicas-programa {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+main .practicas-programa .card-boton {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  padding: 2vw;
+  justify-content: center;
+}
+main .practicas-programa .card-boton a {
+  text-decoration: none;
+  color: black;
+  background-color: rgba(173, 216, 230, 0.662745098);
+  font-weight: bold;
+  font-size: 25px;
+  padding: 30px;
+  border: 3px solid;
+  height: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px 15px 30px 10px;
+}
+main .practicas-programa .card-boton a .destacado-uno,
+main .practicas-programa .card-boton a .destacado-dos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(204, 240, 133);
+  font-size: 30px;
+  height: 60px;
+  width: 150px;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 15px;
+  position: absolute;
+  top: 16%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+main .practicas-programa .card-boton a .destacado-uno h3,
+main .practicas-programa .card-boton a .destacado-dos h3 {
+  font-size: 15px;
+}
+
+main .practicas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(186, 200, 204, 0.662745098);
+  gap: 20px;
+}
+main .practicas .card-practicas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(186, 200, 204, 0.662745098);
+  gap: 20px;
+}
+main .practicas h4 {
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main .practicas .videos-practicas {
+  display: grid;
+  justify-content: center;
+}
+
+footer .pie-pagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a0f4a0;
+}
+footer .pie-pagina .derechos-reservados,
+footer .pie-pagina .direccion {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+footer .pie-pagina .derechos-reservados p,
+footer .pie-pagina .direccion p {
+  margin: 0;
+}
+
 /*# sourceMappingURL=main.css.map */

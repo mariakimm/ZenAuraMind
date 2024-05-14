@@ -1,0 +1,46 @@
+main {
+    // h1{
+
+    // }
+    .beneficios-programa {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        background-color: #bac8cca9;
+
+        .card-beneficios {
+            display: grid;
+            margin: 10px;
+            font-size: 20px;
+
+            img {
+                display: grid;
+                place-items: center;
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+
+            div {
+                h2 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 800;
+                    text-align: center;
+                    color: #9Acd32;
+                    font-size: 30px;
+                }
+
+                p {
+                    text-align: justify;
+                }
+
+            }
+        }
+    }
+
+    // .contact-fixed{
+    //     img{
+
+    //     }
+    // }
+}

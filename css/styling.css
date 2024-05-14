@@ -48,42 +48,42 @@
     width: 4em;
     height: 3em;
 } */
-
+/* 
 #anuncio.carousel {
     max-width: 100%;
     height: 35em;
     overflow: hidden;
-}
+} */
 
-.carousel-inner {
+/* .carousel-inner {
     height: 100%;
-}
+} */
 
-.carousel-item img {
+/* .carousel-item img {
     width: 100%;
     height: auto;
     object-fit: cover;
     object-position: center;
     display: block;
     margin: 0 auto;
-}
+} */
 
-.contenedor-centrado {
+/* .contenedor-centrado {
     position: absolute;
     bottom: 0;
     text-align: center;
     width: 100%;
-}
+} */
 
-.boton-anuncio {
+/* .boton-anuncio {
     display: inline-block;
     width: 11em;
     font-size: 35px;
     text-align: center;
     padding: 30px;
-}
+} */
 
-.boton-anuncio a {
+/* .boton-anuncio a {
     text-decoration: none;
     display: inline-block;
     color: black;
@@ -93,24 +93,24 @@
     padding: 15px;
     border: 3px solid;
     align-items: center;
-}
+} */
 
 /* Main */
-.introduccion-main {
+/* .introduccion-main {
     background-color: #bac8cca9;
     display: grid;
     place-items: center;
     gap: 20px;
-}
+} */
 
-.contenedor-texto {
+/* .contenedor-texto {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     align-items: stretch;
-}
+} */
 
-.texto {
+/* .texto {
     padding: 20px;
     text-align: justify;
     overflow: auto;
@@ -123,9 +123,9 @@
 .texto p .negrita {
     font-weight: bold;
     font-size: 25px;
-}
+} */
 
-.contact-fixed {
+/* .contact-fixed {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -133,10 +133,10 @@
 
 .contact-fixed img {
     width: 60px;
-}
+} */
 
 /* Estilos Footer */
-.pie-pagina {
+/* .pie-pagina {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,10 +153,10 @@
 .derechos-reservados p,
 .direccion p {
     margin: 0;
-}
+} */
 
 /* Estilos Practicas */
-.practicas-programa {
+/* .practicas-programa {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -164,17 +164,17 @@
     text-align: center;
     align-items: center;
     justify-items: center;
-}
+} */
 
-.card-boton {
+/* .card-boton {
     width: 100%;
     height: 250px;
     position: relative;
     padding: 2vw;
     justify-content: center;
-}
+} */
 
-.card-boton a {
+/* .card-boton a {
     text-decoration: none;
     color: black;
     background-color: #add8e6a9;
@@ -188,9 +188,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 30px 15px 30px 10px;
-}
+} */
 
-.destacado-uno {
+/* .destacado-uno {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,13 +205,13 @@
     top: 16%;
     left: 45%;
     transform: translate(-50%, -50%);
-}
+} */
 
-.destacado-uno h3 {
+/* .destacado-uno h3 {
     font-size: 15px;
-}
+} */
 
-.destacado-dos {
+/* .destacado-dos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,102 +230,101 @@
 
 .destacado-dos h3 {
     font-size: 15px;
-}
+} */
 
 /* Estilos Beneficios */
-.beneficios-programa h2 {
+/* .beneficios-programa h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     text-align: center;
     color: #9Acd32;
     font-size: 30px;
-}
+} */
 
-.beneficios-programa{
+/* .beneficios-programa{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     background-color: #bac8cca9;
     
-}
+} */
 
-.card-beneficios {
+/* .card-beneficios {
     display: grid;
     margin: 10px;
-    font-size: 20px;
-    
-}
+    font-size: 20px;  
+} */
 
-.card-beneficios p {
+/* .card-beneficios p {
     text-align: justify;
-}
+} */
 
-.card img {
+/* .card img {
     display: grid;
     place-items: center;
     max-width: 100%;
     height: auto;
     object-fit: cover;
-}
+} */
 
 /* Estilos Recursos */
-.practicas {
+/* .practicas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: #bac8cca9;
     gap: 20px;
-}
+} */
 
-.card-praticas {
+/* .card-praticas {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
     text-align: center;
-}
+} */
 
-.card-praticas h4 {
+/* .card-praticas h4 {
     font-size: 30px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
-.videos-praticas {
+/* .videos-praticas {
     display: grid;
     justify-content: center;
-}
+} */
 
 /* Estilos Contacto */
-.formulario {
+/* .formulario {
     background-color: #bac8cca9;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column: span 2;
-}
+} */
 
-.formulario form {
+/* .formulario form {
     width: 100%;
     height: auto;
     font-size: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-}
+} */
 
-.formulario form label,
+/* .formulario form label,
 .formulario form input,
 .formulario form select {
     width: 95%;
     height: 50px;
     font-size: 20px;
-}
+} */
 
-.formulario textarea {
+/* .formulario textarea {
     width: 95%;
     height: 400px;
     font-size: 20px;
-}
+} */
 
-.boton-enviar {
+/* .boton-enviar {
     text-align: center;
 }
 
@@ -335,26 +334,26 @@
     background-color: #add8e6a9;
     width: 100px;
     height: 40px;
-}
+} */
 
-.mapa {
+/* .mapa {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.info-direccion {
+/* .info-direccion {
     width: 100%;
     text-align: center;
     margin-top: 20px;
-}
+} */
 
-.info-direccion p {
+/* .info-direccion p {
     font-size: 20px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 /* media query de tablet */
 @media (max-width: 1014px) {
