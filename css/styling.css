@@ -1,12 +1,12 @@
 /* Estilos generales */
-* {
+/* * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     border: 3px solid red;
-}
+} */
 
-h1 {
+/* h1 {
     font-size: 70px;
     background-color: #d4ebf2a9;
     font-family: 'Italianno', cursive, 'Slabo 27px', serif;
@@ -14,9 +14,9 @@ h1 {
     text-align: center;
     font-weight: bold;
     margin-bottom: 0;
-}
+} */
 
-.menu-nav {
+/* .menu-nav {
     background-color: #add8e6a9;
 }
 
@@ -47,7 +47,7 @@ h1 {
     background-image: url(./../img/menu.svg);
     width: 4em;
     height: 3em;
-}
+} */
 
 #anuncio.carousel {
     max-width: 100%;
