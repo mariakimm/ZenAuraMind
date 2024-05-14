@@ -28,8 +28,8 @@ header .menu-nav {
   background-color: rgba(173, 216, 230, 0.662745098);
 }
 header .menu-div .logo img {
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
 }
 header .menu-div .logo .menu-boton {
   border: none;
@@ -45,7 +45,10 @@ header .menu-div .logo .menu {
 header .menu-div .logo .menu .menu-ul {
   text-align: center;
 }
-header .menu-div .logo .menu .menu-ul .menu-li a-li {
+header .menu-div .logo .menu .menu-ul .menu-li {
+  display: flex;
+}
+header .menu-div .logo .menu .menu-ul .menu-li a {
   color: black;
   font-size: 30px;
   font-weight: bold;
