@@ -40,18 +40,26 @@ header .menu-div .logo .menu-icon {
   height: 3em;
 }
 header .menu-div .logo .menu {
-  flex-grow: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header .menu-div .logo .menu .menu-ul {
-  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
 }
 header .menu-div .logo .menu .menu-ul .menu-li {
-  display: flex;
+  margin-left: 20px;
 }
-header .menu-div .logo .menu .menu-ul .menu-li a {
+header .menu-div .logo .menu .menu-ul .menu-li .a-li {
   color: black;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 main .main-index #anuncio {
