@@ -27,39 +27,37 @@ h1 {
 header .menu-nav {
   background-color: rgba(173, 216, 230, 0.662745098);
 }
+header .menu-div {
+  display: flex;
+  justify-content: center;
+}
 header .menu-div .logo img {
   height: 250px;
   width: 250px;
 }
-header .menu-div .logo .menu-boton {
+header .menu-div .menu-boton {
   border: none;
 }
-header .menu-div .logo .menu-icon {
+header .menu-div .menu-boton .menu-icon {
   background-image: url(./../img/menu.svg);
   width: 4em;
   height: 3em;
 }
-header .menu-div .logo .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header .menu-div .menu {
+  flex-grow: 0;
 }
-header .menu-div .logo .menu .menu-ul {
-  display: flex;
+header .menu-div .menu .menu-ul {
+  text-align: center;
   justify-content: flex-end;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-grow: 1;
 }
-header .menu-div .logo .menu .menu-ul .menu-li {
-  margin-left: 20px;
+header .menu-div .menu .menu-ul li {
+  display: inline-block;
+  margin-right: 10px;
 }
-header .menu-div .logo .menu .menu-ul .menu-li .a-li {
+header .menu-div .menu .menu-ul li a {
   color: black;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
-  text-decoration: none;
 }
 
 main .main-index #anuncio {

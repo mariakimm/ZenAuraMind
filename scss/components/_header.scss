@@ -4,45 +4,41 @@ header {
     }
 
     .menu-div {
+        display: flex;
+        justify-content: center; 
+
         .logo {
             img {
                 height: 250px;
                 width: 250px;
             }
+        }
 
-            .menu-boton {
-                border: none;
-            }
+        .menu-boton {
+            border: none;
 
             .menu-icon {
                 background-image: url(./../img/menu.svg);
                 width: 4em;
                 height: 3em;
             }
+        }
 
+        .menu {
+            flex-grow: 0;
 
-            .menu {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+            .menu-ul {
+                text-align: center;
+                justify-content: flex-end; 
 
-                .menu-ul {
-                    display: flex;
-                    justify-content: flex-end; 
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                    flex-grow: 1; 
+                li {
+                    display: inline-block;
+                    margin-right: 10px;
 
-                    .menu-li {
-                        margin-left: 20px;
-
-                        .a-li{
-                            color: black;
-                            font-size: 40px;
-                            font-weight: bold;
-                            text-decoration: none;
-                        }
+                    a {
+                        color: black;
+                        font-size: 30px;
+                        font-weight: bold;
                     }
                 }
             }
