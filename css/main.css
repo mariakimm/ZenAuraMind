@@ -59,36 +59,36 @@ header .menu-div .menu .menu-ul li a {
   font-weight: bold;
 }
 
-main .main-index #anuncio {
+.main-index .anuncio {
   max-width: 100%;
-  height: 15em;
+  height: 35em;
   overflow: hidden;
 }
-main .main-index #anuncio .carrousel-inner {
+.main-index .anuncio .carousel-inner {
   height: 100%;
 }
-main .main-index #anuncio .carrousel-inner .carousel-fotos img {
-  width: 100%;
+.main-index .anuncio .carousel-inner .carousel-fotos img {
+  width: 50%;
   height: auto;
   object-fit: cover;
   object-position: center;
   display: block;
   margin: 0 auto;
 }
-main .main-index .contenedor-centrado {
+.main-index .contenedor-centrado {
   position: absolute;
   bottom: 0;
   text-align: center;
   width: 100%;
 }
-main .main-index .contenedor-centrado .boton-anuncio {
+.main-index .contenedor-centrado .boton-anuncio {
   display: inline-block;
-  width: 11em;
+  width: fit-content;
   font-size: 35px;
   text-align: center;
   padding: 30px;
 }
-main .main-index .contenedor-centrado .boton-anuncio a {
+.main-index .contenedor-centrado .boton-anuncio a {
   text-decoration: none;
   display: inline-block;
   color: black;
@@ -99,19 +99,19 @@ main .main-index .contenedor-centrado .boton-anuncio a {
   border: 3px solid;
   align-items: center;
 }
-main .main-index .introduccion-main {
+.main-index .introduccion-main {
   background-color: rgba(186, 200, 204, 0.662745098);
   display: grid;
   place-items: center;
   gap: 20px;
 }
-main .main-index .introduccion-main .contenedor-texto {
+.main-index .introduccion-main .contenedor-texto {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   align-items: stretch;
 }
-main .main-index .introduccion-main .contenedor-texto .texto {
+.main-index .introduccion-main .contenedor-texto .texto {
   padding: 20px;
   text-align: justify;
   overflow: auto;
@@ -120,7 +120,7 @@ main .main-index .introduccion-main .contenedor-texto .texto {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
-main .main-index .introduccion-main .contenedor-texto .texto p {
+.main-index .introduccion-main .contenedor-texto .texto p {
   font-weight: bold;
   font-size: 25px;
 }
@@ -154,33 +154,60 @@ main .beneficios-programa .card-beneficios div p {
   text-align: justify;
 }
 
-main .beneficios-programa {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+main .formulario {
   background-color: rgba(186, 200, 204, 0.662745098);
-}
-main .beneficios-programa .card-beneficios {
   display: grid;
-  margin: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: span 2;
+}
+main .formulario .form {
+  width: 95%;
+  height: auto;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+main .formulario label,
+main .formulario input,
+main .formulario select {
+  width: 95%;
+  height: 50px;
   font-size: 20px;
 }
-main .beneficios-programa .card-beneficios img {
-  display: grid;
-  place-items: center;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
+main .formulario textarea {
+  width: 95%;
+  height: 400px;
+  font-size: 20px;
 }
-main .beneficios-programa .card-beneficios div h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
+main .formulario .boton-enviar {
   text-align: center;
-  color: #9Acd32;
-  font-size: 30px;
 }
-main .beneficios-programa .card-beneficios div p {
+main .formulario .boton-enviar button {
+  font-size: 20px;
+  color: black;
+  background-color: rgba(173, 216, 230, 0.662745098);
+  width: 100px;
+  height: 40px;
+}
+main .formulario .boton-enviar .contenedor-mapa {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-items: center;
+}
+main .formulario .boton-enviar .contenedor-mapa .mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .formulario .boton-enviar .contenedor-mapa .info-direccion {
+  text-align: center;
+  height: auto;
+}
+main .formulario .boton-enviar .contenedor-mapa .info-direccion p {
+  font-size: 20px;
   text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main .practicas-programa {
