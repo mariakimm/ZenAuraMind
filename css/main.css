@@ -159,6 +159,7 @@ main .formulario {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column: span 2;
+  padding: 25px;
 }
 main .formulario .form {
   width: 95%;
@@ -171,8 +172,8 @@ main .formulario label,
 main .formulario input,
 main .formulario select {
   width: 95%;
-  height: 50px;
-  font-size: 20px;
+  height: 40px;
+  font-size: 25px;
 }
 main .formulario textarea {
   width: 95%;
@@ -189,22 +190,28 @@ main .formulario .boton-enviar button {
   width: 100px;
   height: 40px;
 }
-main .formulario .boton-enviar .contenedor-mapa {
+main .formulario .contenedor-mapa {
   display: grid;
   grid-template-rows: auto auto;
   align-items: center;
 }
-main .formulario .boton-enviar .contenedor-mapa .mapa {
+main .formulario .contenedor-mapa .mapa {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-main .formulario .boton-enviar .contenedor-mapa .info-direccion {
+main .formulario .contenedor-mapa .mapa iframe {
+  width: 750px;
+  height: 550px;
+  border: 0;
+}
+main .formulario .contenedor-mapa .info-direccion {
   text-align: center;
   height: auto;
 }
-main .formulario .boton-enviar .contenedor-mapa .info-direccion p {
+main .formulario .contenedor-mapa .info-direccion p {
+  margin-top: 25px;
   font-size: 20px;
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
@@ -241,8 +248,8 @@ main .practicas-programa .card-boton a {
   align-items: center;
   border-radius: 30px 15px 30px 10px;
 }
-main .practicas-programa .card-boton a .destacado-uno,
-main .practicas-programa .card-boton a .destacado-dos {
+main .practicas-programa .card-boton .destacado-uno,
+main .practicas-programa .card-boton .destacado-dos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,8 +265,8 @@ main .practicas-programa .card-boton a .destacado-dos {
   left: 45%;
   transform: translate(-50%, -50%);
 }
-main .practicas-programa .card-boton a .destacado-uno h3,
-main .practicas-programa .card-boton a .destacado-dos h3 {
+main .practicas-programa .card-boton .destacado-uno h3,
+main .practicas-programa .card-boton .destacado-dos h3 {
   font-size: 15px;
 }
 
@@ -268,6 +275,7 @@ main .practicas {
   grid-template-columns: repeat(2, 1fr);
   background-color: rgba(186, 200, 204, 0.662745098);
   gap: 20px;
+  padding: 30px;
 }
 main .practicas .card-practicas {
   display: grid;
@@ -303,6 +311,9 @@ footer .pie-pagina .direccion p {
 }
 
 @media screen and (max-width: 1024px) {
+  .introduccion-main .contenedor-texto {
+    grid-template-columns: repeat(2, 1fr);
+  }
   /* practicas */
   .practicas-programa {
     font-size: 20px;

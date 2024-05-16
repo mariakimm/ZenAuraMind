@@ -1,12 +1,10 @@
 main {
-    // h1{
-
-    // }
     .practicas {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         background-color: #bac8cca9;
         gap: 20px;
+        padding: 30px;
 
         .card-practicas {
             display: grid;

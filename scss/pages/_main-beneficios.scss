@@ -1,7 +1,4 @@
 main {
-    // h1{
-
-    // }
     .beneficios-programa {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -33,14 +30,7 @@ main {
                 p {
                     text-align: justify;
                 }
-
             }
         }
     }
-
-    // .contact-fixed{
-    //     img{
-
-    //     }
-    // }
 }

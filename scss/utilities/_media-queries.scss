@@ -1,5 +1,12 @@
 // media query para tablet
 @media screen and (max-width: 1024px){
+    // main
+    .introduccion-main{
+        .contenedor-texto{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
     /* practicas */
     .practicas-programa {
         font-size: 20px;
