@@ -3,32 +3,37 @@ main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        background-color: #bac8cca9;
+        background-color: $color-main;
+        padding: 20px;
 
         .card-beneficios {
-            display: grid;
-            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            margin: 15px;
             font-size: 20px;
 
             img {
-                display: grid;
-                place-items: center;
                 max-width: 100%;
-                height: auto;
+                height: 300px; 
                 object-fit: cover;
             }
 
             div {
+                width: 100%; 
+
                 h2 {
                     font-family: Arial, Helvetica, sans-serif;
                     font-weight: 800;
                     text-align: center;
-                    color: #9Acd32;
+                    color: $color-titulo-h2;
                     font-size: 30px;
+                    padding: 20px 0;
                 }
 
                 p {
                     text-align: justify;
+                    padding: 0 20px; 
                 }
             }
         }

@@ -1,6 +1,6 @@
 main {
     .formulario {
-        background-color: #bac8cca9;
+        background-color: $color-main;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column: span 2;

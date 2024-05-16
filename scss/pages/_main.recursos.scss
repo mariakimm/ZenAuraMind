@@ -1,16 +1,16 @@
 main {
     .practicas {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        background-color: #bac8cca9;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: $color-main;
         gap: 20px;
         padding: 30px;
 
         .card-practicas {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            background-color: #bac8cca9;
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            background-color: $color-main;
+            gap: 10px;
         }
 
         h4 {
@@ -22,8 +22,11 @@ main {
         .videos-practicas {
             display: grid;
             justify-content: center;
-            // iframe{
-            // }
+
+            iframe {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 }
