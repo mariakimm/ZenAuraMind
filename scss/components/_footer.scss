@@ -3,7 +3,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #a0f4a0;
+        background-color: $color-footer;
 
         .derechos-reservados,
         .direccion {

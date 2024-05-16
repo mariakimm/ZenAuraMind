@@ -66,6 +66,7 @@ header .menu-div .menu .menu-ul li a {
 }
 .main-index .anuncio .carousel-inner {
   height: 100%;
+  background-color: rgba(186, 200, 204, 0.662745098);
 }
 .main-index .anuncio .carousel-inner .carousel-fotos img {
   width: 50%;
@@ -76,17 +77,20 @@ header .menu-div .menu .menu-ul li a {
   margin: 0 auto;
 }
 .main-index .contenedor-centrado {
-  position: absolute;
-  bottom: 0;
+  position: relative;
   text-align: center;
   width: 100%;
+  z-index: 1;
 }
 .main-index .contenedor-centrado .boton-anuncio {
-  display: inline-block;
-  width: fit-content;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 35px;
-  text-align: center;
   padding: 30px;
+  z-index: 2;
+  width: fit-content;
 }
 .main-index .contenedor-centrado .boton-anuncio a {
   text-decoration: none;
@@ -104,11 +108,11 @@ header .menu-div .menu .menu-ul li a {
   display: grid;
   place-items: center;
   gap: 20px;
+  padding: 20px;
 }
 .main-index .introduccion-main .contenedor-texto {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
   align-items: stretch;
 }
 .main-index .introduccion-main .contenedor-texto .texto {
@@ -121,7 +125,6 @@ header .menu-div .menu .menu-ul li a {
   line-height: 1.5;
 }
 .main-index .introduccion-main .contenedor-texto .texto p {
-  font-weight: bold;
   font-size: 25px;
 }
 
@@ -130,18 +133,22 @@ main .beneficios-programa {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   background-color: rgba(186, 200, 204, 0.662745098);
+  padding: 20px;
 }
 main .beneficios-programa .card-beneficios {
-  display: grid;
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
   font-size: 20px;
 }
 main .beneficios-programa .card-beneficios img {
-  display: grid;
-  place-items: center;
   max-width: 100%;
-  height: auto;
+  height: 300px;
   object-fit: cover;
+}
+main .beneficios-programa .card-beneficios div {
+  width: 100%;
 }
 main .beneficios-programa .card-beneficios div h2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -149,9 +156,11 @@ main .beneficios-programa .card-beneficios div h2 {
   text-align: center;
   color: #9Acd32;
   font-size: 30px;
+  padding: 20px 0;
 }
 main .beneficios-programa .card-beneficios div p {
   text-align: justify;
+  padding: 0 20px;
 }
 
 main .formulario {
@@ -272,16 +281,16 @@ main .practicas-programa .card-boton .destacado-dos h3 {
 
 main .practicas {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   background-color: rgba(186, 200, 204, 0.662745098);
   gap: 20px;
   padding: 30px;
 }
 main .practicas .card-practicas {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   background-color: rgba(186, 200, 204, 0.662745098);
-  gap: 20px;
+  gap: 10px;
 }
 main .practicas h4 {
   font-size: 30px;
@@ -291,6 +300,10 @@ main .practicas h4 {
 main .practicas .videos-practicas {
   display: grid;
   justify-content: center;
+}
+main .practicas .videos-practicas iframe {
+  width: 100%;
+  height: auto;
 }
 
 footer .pie-pagina {
@@ -310,111 +323,134 @@ footer .pie-pagina .direccion p {
   margin: 0;
 }
 
-@media screen and (max-width: 1024px) {
-  .introduccion-main .contenedor-texto {
+@media (max-width: 1024px) {
+  /* practicas */
+  main .practicas-programa {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* practicas */
-  .practicas-programa {
-    font-size: 20px;
-  }
-  .destacado-uno {
+  main .destacado-uno, main .destacado-dos {
     font-size: 30px;
     height: 50px;
     width: 100px;
   }
-  .destacado-dos {
-    font-size: 30px;
-    height: 50px;
-    width: 100px;
+  main .beneficios-programa {
+    grid-template-columns: repeat(2, 1fr);
   }
-  /* Beneficios */
-  .beneficios-programa h2 {
-    font-size: 20px;
-  }
-  .beneficios-programa h2 {
-    font-size: 20px;
-  }
-  .card-beneficios img {
-    object-fit: cover;
+  main .beneficios-programa .card-beneficios {
+    margin: 0 auto;
     width: 100%;
-    height: 100%;
+  }
+  main .beneficios-programa .card-beneficios:nth-child(3) {
+    grid-column: span 2;
+  }
+  main .practicas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .formulario {
+    grid-template-columns: 1fr;
+  }
+  main .formulario .contenedor-mapa {
+    margin-top: 20px;
+  }
+  main .formulario .boton-enviar {
+    margin-top: 20px;
   }
 }
-@media screen and (max-width: 768px) {
-  /* Practicas */
-  .contenedor-texto {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 0;
-    gap: 0;
+@media (max-width: 768px) {
+  .main-index h1 {
+    font-size: 50px;
   }
-  .texto {
-    padding: 10px;
+  .main-index .introduccion-main .contenedor-texto {
+    grid-template-columns: 1fr;
   }
-  .practicas-programa {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    place-items: center;
-    width: auto;
+  .main-index .introduccion-main .contenedor-texto a {
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 45px;
+    padding: 15px;
   }
-  .practicas-programa .card-boton {
-    width: 100%;
-    height: 250px;
+  .contenedor-centrado {
     position: relative;
-    padding: 2vw;
+  }
+  .contenedor-centrado .boton-anuncio {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-top: 20px;
+  }
+  main h1 {
+    font-size: 50px;
+  }
+  main .practicas-programa {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main .practicas-programa .card-boton {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
-  .card-boton a {
-    font-size: 30px;
-  }
-  .destacado-uno {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    text-align: center;
-    position: absolute;
-    top: 2%;
+  main .practicas-programa .card-boton .destacado-uno, main .practicas-programa .card-boton .destacado-dos {
+    width: 200px;
+    top: 14%;
     left: 50%;
-    transform: translateX(-50%);
   }
-  .destacado-dos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    text-align: center;
-    position: absolute;
-    top: 2%;
-    left: 50%;
-    transform: translateX(-50%);
+  main .practicas-programa .card-boton .destacado-uno h3, main .practicas-programa .card-boton .destacado-dos h3 {
+    font-size: 25px;
   }
-  /* Beneficios */
-  .beneficios-programa h2 {
-    font-size: 30px;
+  main h1 {
+    font-size: 50px;
   }
-  .beneficios-programa {
-    display: block;
-    flex-direction: column;
-    margin: 10px;
+  main .beneficios-programa {
+    grid-template-columns: 1fr;
+  }
+  main .beneficios-programa .card-beneficios {
+    margin: 0 auto;
     width: 100%;
   }
-  .card-beneficios img {
-    width: 100%;
-    object-fit: cover;
+  main .beneficios-programa .card-beneficios img {
     height: auto;
   }
-  /* Recursos */
-  .practicas {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+  main .beneficios-programa .card-beneficios:nth-child(3) {
+    grid-column: span 1;
   }
-  /* Contacto */
-  .formulario {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  main .practicas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main .formulario {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .formulario .form {
+    width: 100%;
+    font-size: 16px;
+  }
+  main .formulario .form label,
+  main .formulario .form input,
+  main .formulario .form select,
+  main .formulario .form textarea {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  main .formulario .contenedor-mapa {
+    margin-top: 20px;
+    width: 100%;
+    padding: 25px;
+  }
+  main .formulario .contenedor-mapa iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  main .formulario .boton-enviar {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
