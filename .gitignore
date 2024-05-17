@@ -1,3 +1,4 @@
 # archivos que se ignoran
 node_modules
 styling.css
+_loop.scss
