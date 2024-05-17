@@ -23,6 +23,12 @@ h1 {
   width: 60px;
 }
 
+.base-grid, main .practicas .card-practicas, main .practicas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(186, 200, 204, 0.662745098);
+}
+
 header .menu-nav {
   background-color: rgba(173, 216, 230, 0.662745098);
 }
@@ -259,6 +265,10 @@ main .practicas-programa .card-boton a {
 }
 main .practicas-programa .card-boton .destacado-uno,
 main .practicas-programa .card-boton .destacado-dos {
+  position: absolute;
+  top: 16%;
+  left: 45%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,30 +279,20 @@ main .practicas-programa .card-boton .destacado-dos {
   text-align: center;
   border-radius: 20px;
   padding-top: 15px;
-  position: absolute;
-  top: 16%;
-  left: 45%;
-  transform: translate(-50%, -50%);
 }
-main .practicas-programa .card-boton .destacado-uno h3,
-main .practicas-programa .card-boton .destacado-dos h3 {
+main .practicas-programa .card-boton .destacado-uno h2,
+main .practicas-programa .card-boton .destacado-dos h2 {
   font-size: 15px;
 }
 
 main .practicas {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: rgba(186, 200, 204, 0.662745098);
   gap: 20px;
   padding: 30px;
 }
 main .practicas .card-practicas {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: rgba(186, 200, 204, 0.662745098);
   gap: 10px;
 }
-main .practicas h4 {
+main .practicas h2 {
   font-size: 30px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -394,7 +394,7 @@ footer .pie-pagina .direccion p {
     top: 14%;
     left: 50%;
   }
-  main .practicas-programa .card-boton .destacado-uno h3, main .practicas-programa .card-boton .destacado-dos h3 {
+  main .practicas-programa .card-boton .destacado-uno h2, main .practicas-programa .card-boton .destacado-dos h2 {
     font-size: 25px;
   }
   main h1 {
