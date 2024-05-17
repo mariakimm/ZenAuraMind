@@ -1,17 +1,6 @@
 // extend
-.btn-large {
-    @extend .btn;
-    text-decoration: none;
-    color: black;
-    background-color: #add8e6a9;
-    font-weight: bold;
-    font-size: 25px;
-    padding: 30px;
-    border: 3px solid;
-    height: 90%;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px 15px 30px 10px;
+.base-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: $color-main;
 }
